@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="longtest.Controller">
+  <tabs>
+    <Tab text="Information">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="247.0" layoutY="174.0" prefHeight="761.0" prefWidth="1280.0" style="-fx-background-color: #e8e8ff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="Name provided" />
+                              <CheckBox mnemonicParsing="false" text="Section provided" />
+                              <CheckBox mnemonicParsing="false" text="Class number provided" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <right>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <Label text="Summary of scores">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <GridPane gridLinesVisible="true" prefWidth="240.0" BorderPane.alignment="CENTER">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Information">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Counter" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Adding Machine" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Factorial" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Bumper" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Clock" GridPane.rowIndex="3">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Color Changer" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="12 Days" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="Total" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label> 
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </right>
+                     <left>
+                        <VBox prefHeight="511.0" prefWidth="329.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="135.0" prefWidth="93.0" text="Name: " />
+                                    <Label prefHeight="104.0" prefWidth="236.0" text="Clyde Courtney T. Jallorina" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="104.0" prefWidth="102.0" text="Section: " />
+                                    <Label prefHeight="142.0" prefWidth="244.0" text="Graviton" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="107.0" prefWidth="93.0" text="Class Number: " />
+                                    <Label prefHeight="108.0" prefWidth="230.0" text="10" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </left>
+                  </BorderPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Adding Machine">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #80e0e0;">
+               <children>
+                  <BorderPane layoutX="186.0" layoutY="126.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="fx:ids for TextFields set" />
+                              <CheckBox mnemonicParsing="false" text="Calculate button works" />
+                              <CheckBox mnemonicParsing="false" text="&quot;Invalid&quot; is displayed for exception" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <center>
+                        <VBox alignment="CENTER" spacing="20.0">
+                           <children>
+                              <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <TextField fx:id="addend1" alignment="CENTER_RIGHT" prefHeight="96.0" prefWidth="180.0" text="0">
+                                       <font>
+                                          <Font name="Courier New Bold" size="36.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label text="+">
+                                       <font>
+                                          <Font name="Segoe UI" size="48.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="addend2" alignment="CENTER_RIGHT" prefHeight="96.0" prefWidth="180.0" text="0">
+                                       <font>
+                                          <Font name="Courier New Bold" size="36.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label text="=">
+                                       <font>
+                                          <Font name="Segoe UI" size="48.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="sum" alignment="CENTER_RIGHT" editable="false" prefHeight="96.0" prefWidth="180.0" text="0">
+                                       <font>
+                                          <Font name="Courier New Bold" size="36.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <Button mnemonicParsing="false" onAction="#displaySum" text="Calculate">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Bumper">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onKeyPressed="#bumperKeyPress" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="254.0" layoutY="147.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="Image moves up and down" />
+                              <CheckBox mnemonicParsing="false" text="Image moves left and right" />
+                              <CheckBox mnemonicParsing="false" text="Image changes to correct sprite" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="643.0" layoutY="439.0" mnemonicParsing="false" onAction="#spriteLeft" prefHeight="48.0" prefWidth="48.0" text="◀" />
+                              <Button layoutX="690.0" layoutY="439.0" mnemonicParsing="false" onAction="#spriteDown" prefHeight="48.0" prefWidth="48.0" text="▼" />
+                              <Button layoutX="690.0" layoutY="391.0" mnemonicParsing="false" onAction="#spriteUp" prefHeight="48.0" prefWidth="48.0" text="▲" />
+                              <Button layoutX="738.0" layoutY="439.0" mnemonicParsing="false" onAction="#spriteRight" prefHeight="48.0" prefWidth="48.0" text="▶" />
+                              <ImageView fx:id="sprite" fitHeight="32.0" fitWidth="32.0" layoutX="384.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sprite/down.gif" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Clock">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" onKeyPressed="#clockKeyPress" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #80ffc0;">
+               <children>
+                  <BorderPane layoutX="181.0" layoutY="101.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="Minute hand rotates" />
+                              <CheckBox mnemonicParsing="false" text="Hour hand rotates correctly" />
+                              <CheckBox mnemonicParsing="false" text="Numbers wrap around correctly for hours" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <center>
+                        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@clock/face.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="minuteHand" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@clock/minutehand.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="hourHand" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@clock/hourhand.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </StackPane>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="64.0" prefWidth="32.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#hourUp" prefHeight="32.0" prefWidth="32.0" text="▲">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#hourDown" prefHeight="32.0" prefWidth="32.0" text="▼">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <Label fx:id="hourDigital" text="12" textFill="RED">
+                                       <font>
+                                          <Font name="Stencil" size="72.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text=":">
+                                       <font>
+                                          <Font name="Stencil" size="72.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="minuteDigital" text="00" textFill="MAGENTA">
+                                       <font>
+                                          <Font name="Stencil" size="72.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="CENTER" prefHeight="64.0" prefWidth="32.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#minuteUp" prefHeight="32.0" prefWidth="32.0" text="▲">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#minuteDown" prefHeight="32.0" prefWidth="32.0" text="▼">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Color Changer">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+               <children>
+                  <BorderPane layoutX="211.0" layoutY="106.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="fx:id of ColorPicker is set" />
+                              <CheckBox mnemonicParsing="false" text="getSource() is utilized" />
+                              <CheckBox mnemonicParsing="false" text="Clicked shape changes color" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <top>
+                        <ColorPicker fx:id="picker" editable="true" promptText="Choose a color" BorderPane.alignment="CENTER">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                           <BorderPane.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </BorderPane.margin>
+                        </ColorPicker>
+                     </top>
+                     <center>
+                        <StackPane maxHeight="320.0" maxWidth="320.0" minHeight="320.0" minWidth="320.0" prefHeight="320.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Rectangle arcHeight="80.0" arcWidth="80.0" fill="DODGERBLUE" height="320.0" onMouseClicked="#clickShape" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                              <Rectangle arcHeight="80.0" arcWidth="80.0" fill="#f6ff1f" height="240.0" onMouseClicked="#clickShape" stroke="BLACK" strokeType="INSIDE" width="240.0" />
+                              <Rectangle arcHeight="80.0" arcWidth="80.0" fill="WHITE" height="160.0" onMouseClicked="#clickShape" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+                              <Rectangle arcHeight="80.0" arcWidth="80.0" height="80.0" onMouseClicked="#clickShape" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+    <Tab text="Counter">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" onKeyPressed="#counterKeyPress" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: ffd8ff;">
+               <children>
+                  <BorderPane layoutX="276.0" layoutY="81.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="fx:id for Label set" />
+                              <CheckBox mnemonicParsing="false" text="Reset button works" />
+                              <CheckBox mnemonicParsing="false" text="Counter works" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <center>
+                        <HBox alignment="CENTER" spacing="18.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#counterUp" prefHeight="48.0" prefWidth="48.0" text="+">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblCounter" text="0">
+                                 <font>
+                                    <Font name="Stencil" size="96.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#counterReset" prefHeight="48.0" text="Reset">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Factorial">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e0ffe0;">
+               <children>
+                  <BorderPane layoutX="160.0" layoutY="135.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="fx:ids for Slider and Label are set" />
+                              <CheckBox mnemonicParsing="false" text="Factorial is computed" />
+                              <CheckBox mnemonicParsing="false" text="Factorial is displayed" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="120.0">
+                                 <padding>
+                                    <Insets left="40.0" right="40.0" />
+                                 </padding>
+                                 <children>
+                                    <Label fx:id="lblFactorial" text="0! = 1">
+                                       <font>
+                                          <Font name="Stencil" size="72.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Slider fx:id="sliderFactorial" blockIncrement="1.0" majorTickUnit="1.0" max="20.0" minorTickCount="0" onMouseReleased="#displayFactorial" showTickLabels="true" showTickMarks="true" snapToTicks="true">
+                                 <VBox.margin>
+                                    <Insets left="40.0" right="40.0" />
+                                 </VBox.margin>
+                              </Slider>
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="12 Days">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #8e5664;">
+               <children>
+                  <BorderPane layoutX="259.0" layoutY="100.0" prefHeight="561.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <bottom>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1280.0" spacing="20.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-background-color: #ffffc0;" BorderPane.alignment="CENTER">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="Label for day is updated" />
+                              <CheckBox mnemonicParsing="false" text="Proper form of ordinal is displayed" />
+                              <CheckBox mnemonicParsing="false" text="Lyric for that day is printed" />
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <right>
+                        <Slider fx:id="sliderDays" blockIncrement="1.0" majorTickUnit="1.0" max="12.0" min="1.0" minorTickCount="0" onMouseReleased="#changeSlider" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" BorderPane.alignment="CENTER" />
+                     </right>
+                     <center>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <HBox maxWidth="720.0" minWidth="640.0" prefHeight="24.0" prefWidth="640.0">
+                                 <children>
+                                    <Label text="Day: " textFill="WHITE" />
+                                    <Label fx:id="lblDay" text="1" textFill="YELLOW">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxWidth="720.0" minWidth="640.0" prefHeight="24.0" prefWidth="640.0">
+                                 <children>
+                                    <Label text="Lyrics" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <TextArea fx:id="txtLyrics" maxHeight="360.0" maxWidth="720.0" minHeight="360.0" minWidth="640.0" prefHeight="360.0" prefWidth="640.0" text="On the 1st day of Christmas, my true love gave to me&#10;A partridge in a pear tree" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
